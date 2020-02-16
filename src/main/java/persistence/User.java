@@ -4,11 +4,14 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import services.UserService;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 @Table(name = "user")
 @Entity
@@ -31,6 +34,9 @@ public class User extends CommonEntity {
 
   private String lastName;
 
-  private LocalDateTime birthday;
+  private LocalDate birthday;
+
+  @OneToOne(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+  private UserConfig config;
 
 }

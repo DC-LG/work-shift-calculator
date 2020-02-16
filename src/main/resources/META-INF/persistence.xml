@@ -4,7 +4,7 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
     <persistence-unit name="jpa-work-shift-calculator" transaction-type="RESOURCE_LOCAL">
         <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/work_shift_calculator_db"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/work_shift_calculator_db?createDatabaseIfNotExist=true"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="root"/>
             <property name="hibernate.show_sql" value="true"/>

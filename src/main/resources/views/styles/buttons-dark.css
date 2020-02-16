@@ -1,0 +1,466 @@
+.glyph-icon { }
+
+.button:disabled > .jfx-spinner {
+    -fx-opacity: 1.0;
+}
+
+.button:disabled {
+    -fx-opacity: 0.85;
+}
+
+.my-button-grey {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #869aa6;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-grey .glyph-icon {
+    -fx-fill: #869aa6;
+}
+
+.my-button-grey:hover {
+    -fx-background-color: #869aa6;
+}
+
+.my-button-grey:hover .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+.my-button-cyan {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #00eaff;
+    -fx-filli: #00eaff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-cyan .glyph-icon {
+    -fx-fill: #00eaff;
+}
+
+.my-button-cyan:hover {
+    -fx-background-color: #00eaff;
+    -fx-border-color: #00eaff;
+}
+
+.my-button-cyan:hover .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+.my-button-green {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #5a985b;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-green .glyph-icon {
+    -fx-fill: #5a985b;
+}
+
+.my-button-green:hover {
+    -fx-background-color: #5a985b;
+    -fx-border-color: #5a985b;
+}
+
+.my-button-green:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-button-blue {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #489EDE;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-blue .glyph-icon {
+    -fx-fill: #489EDE;
+}
+
+.my-button-blue:hover {
+    -fx-background-color: #489EDE;
+    -fx-border-color: #489EDE;
+}
+
+.my-button-blue:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-button-orange {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #d28b74;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-orange .glyph-icon {
+    -fx-fill: #d28b74;
+}
+
+.my-button-orange:hover {
+    -fx-background-color: #d28b74;
+    -fx-border-color: #d28b74;
+}
+
+.my-button-orange:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-button-red {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: rgba(255, 41, 39, 0.8);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-red .glyph-icon {
+    -fx-fill: rgba(255, 41, 39, 0.8);
+}
+
+.my-button-red:hover {
+    -fx-background-color: rgba(255, 41, 39, 0.8);
+    -fx-border-color: rgba(255, 41, 39, 0.8);
+}
+
+.my-button-red:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+
+.my-button-purple {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #8a5cb4;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-purple .glyph-icon {
+    -fx-fill: #8a5cb4;
+}
+
+.my-button-purple:hover {
+    -fx-background-color: #8a5cb4;
+    -fx-border-color: #8a5cb4;
+}
+
+.my-button-purple:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-button-pink {
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #cd6481;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-button-pink .glyph-icon {
+    -fx-fill: #cd6481;
+}
+
+.my-button-pink:hover {
+    -fx-background-color: #cd6481;
+    -fx-border-color: #cd6481;
+}
+
+.my-button-pink:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-button {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #1d1d26;
+}
+.my-button:focused {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #489EDE;
+}
+
+.cancel-button {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #9d4f5c;
+}
+
+.pay-button {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #355987;
+}
+
+.pay-button:pressed {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #00d4e6;
+}
+
+/**
+        TOGGLE BUTTONS
+*/
+
+.my-toggle-button {
+    -fx-text-fill: WHITE;
+    -fx-background-color: #4f5152;
+}
+
+.my-toggle-button:selected {
+    -fx-background-color: #489EDE;
+}
+
+.my-toggle-purple {
+    -fx-font-weight: NORMAL;
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #8a5cb4;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-purple .glyph-icon {
+    -fx-fill: #8a5cb4;
+}
+
+.my-toggle-purple:hover {
+    -fx-background-color: #8a5cb4;
+    -fx-border-color: #8a5cb4;
+}
+
+.my-toggle-purple:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-purple:selected {
+    -fx-font-weight: BOLD;
+    -fx-background-color: #8a5cb4;
+    -fx-effect: dropshadow(three-pass-box, #00eaff, 20, 0, 0, 0);
+    -fx-border-color: #00eaff;
+    -fx-border-width: 2;
+    -fx-border-radius: 2;
+}
+.my-toggle-purple:selected .glyph-icon {
+    -fx-fill: #00eaff;
+}
+
+.my-toggle-pink {
+    -fx-font-weight: NORMAL;
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #cd6491;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-pink .glyph-icon {
+    -fx-fill: #cd6491;
+}
+
+.my-toggle-pink:hover {
+    -fx-background-color: #cd6491;
+    -fx-border-color: #cd6491;
+}
+
+.my-toggle-pink:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-pink:selected {
+    -fx-font-weight: BOLD;
+    -fx-background-color: #cd6491;
+    -fx-effect: dropshadow(three-pass-box, #00eaff, 20, 0, 0, 0);
+    -fx-border-color: #00eaff;
+    -fx-border-width: 2;
+    -fx-border-radius: 2;
+}
+.my-toggle-pink:selected .glyph-icon {
+    -fx-fill: #00eaff;
+}
+
+.my-toggle-blue {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #489EDE;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-blue .glyph-icon {
+    -fx-fill: #489EDE;
+}
+
+.my-toggle-blue:hover {
+    -fx-background-color: #489EDE;
+    -fx-border-color: #489EDE;
+}
+
+.my-toggle-blue:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-blue:selected {
+    -fx-background-color: #489EDE;
+    -fx-font-weight: BOLD;
+}
+.my-toggle-blue:selected .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+.my-toggle-orange {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #d28b74;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-orange .glyph-icon {
+    -fx-fill: #d28b74;
+}
+
+.my-toggle-orange:hover {
+    -fx-background-color: #d28b74;
+    -fx-border-color: #d28b74;
+}
+
+.my-toggle-orange:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-orange:selected {
+    -fx-background-color: #d28b74;
+}
+.my-toggle-orange:selected .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+.my-toggle-green {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #5a985b;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-green .glyph-icon {
+    -fx-fill: #5a985b;
+}
+
+.my-toggle-green:hover {
+    -fx-background-color: #5a985b;
+    -fx-border-color: #5a985b;
+}
+
+.my-toggle-green:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-green:selected {
+    -fx-background-color: #5a985b;
+}
+.my-toggle-green:selected .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+
+.my-half-button-blue {
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-background-color: #1d1d26;
+    -fx-text-fill: WHITE;
+}
+
+.my-half-button-blue .glyph-icon {
+    -fx-fill: #489EDE;
+}
+
+.icons-badge .badge-pane {
+    -fx-background-color: #467ebc;
+    -fx-background-radius: 5px;
+    -fx-pref-width: 20;
+    -fx-pref-height: 20;
+}
+
+.icons-badge Label {
+    -fx-font-weight: BOLD;
+    -fx-font-size: 14.0px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-cyan {
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -fx-border-color: #00eaff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+    -fx-text-fill: WHITE;
+}
+
+.my-toggle-cyan .glyph-icon {
+    -fx-fill: #00eaff;
+}
+
+.my-toggle-cyan:hover {
+    -fx-background-color: #00eaff;
+    -fx-border-color: #00eaff;
+}
+
+.my-toggle-cyan:hover .glyph-icon{
+    -fx-fill: WHITE;
+}
+
+.my-toggle-cyan:selected {
+    -fx-background-color: #00eaff;
+}
+.my-toggle-cyan:selected .glyph-icon {
+    -fx-fill: WHITE;
+}
+
+.my-half-button-green {
+    -fx-border-width:  2 2 2 2;
+    -fx-border-color: #d28b74;
+    -fx-text-fill: WHITE;
+}
+
+.my-half-button-green .glyph-icon {
+    -fx-fill: #d28b74;
+}
+.my-half-button-green:hover {
+     -fx-border-color: #8a5cb4;
+ }
+
+.my-half-button-green:hover .glyph-icon {
+    -fx-fill: #8a5cb4;
+}
+
+.no-border-button-purple {
+    -fx-background-color: TRANSPARENT;
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: WHITE;
+}
+
+.no-border-button-purple .glyph-icon {
+    -fx-fill: #8a5cb4;
+}
+
+.no-border-button-purple:hover {
+    -fx-background-color: #8a5cb4;
+}
+
+.no-border-button-purple:hover .glyph-icon{
+    -fx-fill: WHITE;
+}

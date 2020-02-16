@@ -1,0 +1,207 @@
+.table-view {
+    -fx-base: #1d1d26;
+    -fx-background-color: #2c2c3b;
+    -fx-control-inner-background: rgba(0, 152, 207, 0);
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: rgba(0, 142, 191, 0);
+    -fx-padding: -1;
+    -fx-border-color: TRANSPARENT;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view :row-selection, column-header-background {
+    -fx-max-height: 10px;
+}
+
+.table-view .column-header-background .label{
+    -fx-text-fill: #eeeeee;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1d1d26;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: WHITE;
+}
+
+.table-view .table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, rgba(62, 62, 78, 0.91);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-cell-size: 30px;
+    -fx-font-size: 14px;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: black;
+}
+
+.table-view .table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #3e3e4e;
+    -fx-cell-size: 30px;
+    -fx-font-size: 14px;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+    -fx-text-fill: black;
+}
+
+.table-view:focused .table-row-cell:focused {
+    -fx-table-cell-border-color: transparent;
+}
+
+.tableview-green .column-header, .tableview-green .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #5a985b;
+    -fx-border-insets: 0 5 2 0;
+}
+.tableview-green .table-row-cell:selected {
+    -fx-background-color: rgba(90, 152, 91, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+
+.tableview-cyan .column-header, .tableview-cyan .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #00eaff;
+    -fx-border-insets: 0 5 2 0;
+}
+
+.tableview-cyan .table-row-cell:selected {
+    -fx-background-color: rgba(0, 234, 255, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.tableview-blue {
+    -fx-padding: 0;
+    -fx-border-color: #489EDE;
+    -fx-border-radius: 0 0 5 5;
+}
+
+.tableview-blue .column-header, .tableview-blue .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #489EDE;
+    -fx-border-insets: 0 5 2 0;
+}
+
+.tableview-blue .table-row-cell:selected {
+    -fx-background-color: rgba(72, 158, 222, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.tableview-purple {
+    -fx-padding: 0;
+    -fx-border-color: #8a5cb4;
+    -fx-border-radius: 0 0 5 5;
+}
+
+.tableview-purple .column-header, .tableview-purple .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #8a5cb4;
+    -fx-border-insets: 0 5 2 0;
+}
+.tableview-purple .table-row-cell:selected {
+    -fx-background-color: rgba(138, 92, 180, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+
+.tableview-pink .column-header, .tableview-pink .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #cd6481;
+    -fx-border-insets: 0 5 2 0;
+}
+
+.tableview-pink .table-row-cell:selected {
+    -fx-background-color: rgba(205, 100, 129, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.tableview-orange .column-header, .tableview-orange .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #d28b74;
+    -fx-border-insets: 0 5 2 0;
+}
+
+.tableview-orange .table-row-cell:selected {
+    -fx-background-color: rgba(210, 139, 116, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.tableview-grey .column-header, .tableview-grey .filler {
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: #869aa6;
+    -fx-border-insets: 0 5 2 0;
+}
+
+.tableview-grey .table-row-cell:selected {
+    -fx-background-color: rgba(134, 154, 166, 0.6);
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-padding: 6px;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6px;
+}
+
+.increment-button .increment-arrow, .decrement-button .decrement-arrow {
+    -fx-background-color: WHITE;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5px;
+}
+
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #a5a5a5;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5px;
+    -fx-padding: 6px;
+}
+
+.scroll-bar .thumb:hover,
+.scroll-bar .thumb:pressed {
+    -fx-background-color: derive(black, 70%);
+}
+
+.increment-button:hover, .decrement-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0);
+    -fx-border-color: rgba(255, 255, 255, 0);
+}

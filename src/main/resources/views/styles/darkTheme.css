@@ -1,0 +1,148 @@
+.root {
+    -fx-background-color: #2c2c3b;
+}
+
+.root-darker {
+    -fx-background-color: #1d1d26;
+}
+
+.noticeable-text-field {
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+}
+
+.noticeable-label {
+    -fx-text-fill: WHITE;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -jfx-unfocus-color: #8389a5;
+}
+
+.jfx-password-field {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -jfx-unfocus-color: #8389a5;
+}
+
+.text-area {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -jfx-unfocus-color: #8389a5;
+}
+
+.jfx-check-box {
+    -fx-text-fill: WHITE;
+}
+
+.noticeable-date-picker .text-field {
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -jfx-unfocus-color: #8389a5;
+}
+
+.combo-box {
+    -fx-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -fx-prompt-text-fill: WHITE;
+    -fx-font-size: 14px;
+    -fx-background-color: TRANSPARENT;
+    -jfx-unfocus-color: #8389a5;
+}
+
+.combo-box:editable > .text-field {
+    -fx-text-fill: WHITE;
+}
+
+.combo-box > .list-cell {
+    -fx-fill: WHITE;
+    -fx-text-fill: WHITE;
+    -fx-background-color: TRANSPARENT;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: rgba(131, 137, 165, 0.70);
+    -fx-text-fill: WHITE;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: rgba(72, 158, 222, 0.8);
+    -fx-text-fill: WHITE;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #3e3e4e;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.70), 8, 0.0, 0, 0);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-padding: 4 0 4 5;
+    -fx-text-fill: WHITE;
+    -fx-background-color: #3e3e4e;
+}
+
+
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+    -fx-background-color: #1d1d26;
+    -fx-border-color: #1d1d26;
+    -fx-padding: 6px;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 6px;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #1d1d26;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5px;
+}
+
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #a5a5a5;
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 5px;
+    -fx-padding: 6px;
+}
+
+.scroll-bar .thumb:hover,
+.scroll-bar .thumb:pressed {
+    -fx-background-color: derive(black, 70%);
+}
+
+.increment-button:hover, .decrement-button:hover {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+    -fx-border-color: #1d1d26;
+}
+
+.scroll-pane:focused {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .corner {
+    -fx-background-insets: 0;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #1d1d26;
+}
+
+.split-pane > .split-pane-divider {
+    -fx-background-color: #2c2c3b;
+}

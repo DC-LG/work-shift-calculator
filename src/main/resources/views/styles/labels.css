@@ -1,0 +1,81 @@
+.root {
+    -fx-background-color: #2c2c3b;
+    -fx-fill: #eeeeee;
+}
+
+.text-field {
+    -fx-prompt-text-fill: WHITE;
+    -fx-text-fill: WHITE;
+}
+
+.my-label-orange {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #d28b74;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-orange .glyph-icon {
+    -fx-fill: #d28b74;
+}
+
+.my-label-cyan {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #00eaff;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-cyan .glyph-icon {
+    -fx-fill: #00eaff;
+}
+
+.my-label-pink {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #cd6481;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-pink .glyph-icon {
+    -fx-fill: #cd6481;
+}
+
+.label-green-line {
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #5a985b;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-green {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #5a985b;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-green .glyph-icon {
+    -fx-fill: #5a985b;
+}
+
+.my-label-blue {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #489EDE;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-blue .glyph-icon {
+    -fx-fill: #489EDE;
+}
+
+.my-label-purple {
+    -fx-background-color: #1D1D26;
+    -fx-border-width:  0 0 2 0;
+    -fx-border-color: #8a5cb4;
+    -fx-text-fill: #eeeeee;
+}
+
+.my-label-purple .glyph-icon {
+    -fx-fill: #8a5cb4;
+}

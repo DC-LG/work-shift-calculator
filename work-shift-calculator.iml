@@ -5,7 +5,7 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
-          <factory-entry name="jpa-work-shift-calculator" />
+          <factory-entry name="jpa-work-shift-calculator" value="87fd5877-924c-44c2-b310-0fda9fa9535e" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/META-INF/persistence.xml" />

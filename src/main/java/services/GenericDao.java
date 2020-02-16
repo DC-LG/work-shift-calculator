@@ -1,18 +1,39 @@
 package services;
 
+import persistence.User;
+import persistence.config.PersistenceConfig;
+
+import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 public interface GenericDao<ID, E> {
 
-  void delete(E entity);
+  EntityManager em = PersistenceConfig.getInstance().getEntityManager();
 
-  E update(E entity);
+  default void delete(E entity) {
+    em.getTransaction().begin();
+    em.remove(entity);
+    em.getTransaction().commit();
+  }
 
-  void save(E entity);
+  default E update(E entity) {
+    em.getTransaction().begin();
+    E mergedEntity = em.merge(entity);
+    em.getTransaction().commit();
 
-  Optional<E> findOne(ID id);
+    return mergedEntity;
+  }
 
-  List<E> findAll();
+  default void save(E entity) {
+    em.getTransaction().begin();
+    em.persist(entity);
+    em.getTransaction().commit();
+  }
+
+  Optional<E> findOneById(Long id);
+
+  List<User> findAll();
 
 }
