@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import persistence.User;
 import persistence.UserConfig;
 import services.UserService;
+import utils.UserContext;
 import utils.ValidatorFactory;
 import utils.View;
 import utils.ViewManager;
@@ -115,11 +116,25 @@ public class RegisterController implements Initializable {
       return selectedItem.length() > 3;
     });
 
+    String errorMessage = resources.getString("login.validation.username.exists");
+    ValidatorBase usernameValidator = ValidatorFactory.createCustomValidator(errorMessage, () -> {
+      User currentUser = userService.findByUsernameOrEmail(usernameTextField.getText());
+      UserContext.setCurrentUser(currentUser);
+      return UserContext.getCurrentUser().isPresent();
+    });
+
+    String error = resources.getString("login.validation.email.exists");
+    ValidatorBase emailValidator = ValidatorFactory.createCustomValidator(error, () -> {
+      User currentUser = userService.findByUsernameOrEmail(emailTextField.getText());
+      UserContext.setCurrentUser(currentUser);
+      return UserContext.getCurrentUser().isPresent();
+    });
+
     firstNameTextField.getValidators().add(requiredFieldValidator);
     lastNameTextField.getValidators().add(requiredFieldValidator);
-    usernameTextField.getValidators().add(requiredFieldValidator);
+    usernameTextField.getValidators().addAll(requiredFieldValidator, usernameValidator);
     passwordField.getValidators().add(requiredFieldValidator);
-    emailTextField.getValidators().addAll(requiredFieldValidator, emailRegexValidator);
+    emailTextField.getValidators().addAll(requiredFieldValidator, emailRegexValidator, emailValidator);
     birthDatePicker.getValidators().add(requiredFieldValidator);
     emailPasswordField.getValidators().add(emailPasswordValidator);
     currencyComboBox.getValidators().add(currencyValidator);

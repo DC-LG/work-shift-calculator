@@ -7,6 +7,7 @@
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,27 +15,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.RegisterController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.RegisterController">
    <children>
       <HBox alignment="CENTER" prefHeight="450.0" prefWidth="800.0" spacing="100.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
          <children>
             <VBox alignment="CENTER" prefHeight="530.0" prefWidth="200.0" spacing="30.0" HBox.hgrow="NEVER">
                <children>
-                  <JFXTextField fx:id="firstNameTextField" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="First name" VBox.vgrow="NEVER" />
-                  <JFXTextField fx:id="usernameTextField" labelFloat="true" layoutX="10.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" promptText="Username" />
-                  <JFXTextField fx:id="emailTextField" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="Email" />
-                  <JFXCheckBox fx:id="autoIncludeFromEmailCheckBox" prefHeight="34.0" prefWidth="200.0" text="Automatically include &#10;new shifts from email?" />
-                  <JFXComboBox fx:id="languageComboBox" labelFloat="true" prefHeight="27.0" prefWidth="200.0" promptText="Language (Optional)" />
+                  <JFXTextField fx:id="firstNameTextField" focusColor="WHITE" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="First name" styleClass="my-text-field" VBox.vgrow="NEVER" />
+                  <JFXTextField fx:id="usernameTextField" focusColor="WHITE" labelFloat="true" layoutX="10.0" layoutY="260.0" prefHeight="30.0" prefWidth="200.0" promptText="Username" styleClass="my-text-field" />
+                  <JFXTextField fx:id="emailTextField" focusColor="WHITE" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="Email" styleClass="my-text-field" />
+                  <JFXCheckBox fx:id="autoIncludeFromEmailCheckBox" prefHeight="34.0" prefWidth="329.0" text="Include shifts from email?" />
+                  <JFXComboBox fx:id="languageComboBox" focusColor="WHITE" labelFloat="true" prefHeight="30.0" prefWidth="239.0" promptText="Language (Optional)" styleClass="my-combo-box" />
                </children>
             </VBox>
             <VBox alignment="CENTER" layoutX="310.0" layoutY="10.0" prefHeight="530.0" prefWidth="200.0" spacing="30.0">
                <children>
-                  <JFXTextField fx:id="lastNameTextField" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="Last name" VBox.vgrow="NEVER" />
-                  <JFXPasswordField fx:id="passwordField" labelFloat="true" promptText="Password" />
-                  <JFXDatePicker fx:id="birthDatePicker" prefHeight="27.0" prefWidth="200.0" promptText="Birth date" />
-                  <JFXPasswordField fx:id="emailPasswordField" disable="true" promptText="Email password" />
-                  <JFXComboBox fx:id="currencyComboBox" editable="true" labelFloat="true" prefHeight="27.0" prefWidth="200.0" promptText="Currency (Optional)">
+                  <JFXTextField fx:id="lastNameTextField" focusColor="WHITE" labelFloat="true" prefHeight="30.0" prefWidth="200.0" promptText="Last name" styleClass="my-text-field" VBox.vgrow="NEVER" />
+                  <JFXPasswordField fx:id="passwordField" focusColor="WHITE" labelFloat="true" promptText="Password" styleClass="my-text-field" />
+                  <JFXDatePicker fx:id="birthDatePicker" prefHeight="27.0" prefWidth="200.0" promptText="Birth date" styleClass="my-text-field" />
+                  <JFXPasswordField fx:id="emailPasswordField" disable="true" focusColor="#8a5cb4" promptText="Email password" styleClass="my-text-field" />
+                  <JFXComboBox fx:id="currencyComboBox" editable="true" focusColor="WHITE" labelFloat="true" prefHeight="27.0" prefWidth="200.0" promptText="Currency (Optional)" styleClass="my-combo-box">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>
@@ -46,17 +46,14 @@
             </VBox>
          </children>
       </HBox>
-      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="-3.0" layoutY="6.0" prefHeight="70.0" prefWidth="800.0" text="Registration" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <font>
-            <Font size="18.0" />
-         </font>
+      <Label alignment="CENTER" graphicTextGap="10.0" layoutX="-3.0" layoutY="6.0" prefHeight="70.0" prefWidth="800.0" styleClass="my-label-purple" text="Registration" textFill="#e88fa0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <graphic>
-            <MaterialDesignIconView glyphName="ACCOUNT_PLUS" size="30" />
+            <MaterialDesignIconView glyphName="ACCOUNT_PLUS" size="30" styleClass="my-label-pink" />
          </graphic>
       </Label>
-      <HBox alignment="CENTER" layoutY="500.0" prefHeight="100.0" prefWidth="800.0" spacing="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <HBox alignment="CENTER" layoutY="500.0" prefHeight="100.0" prefWidth="800.0" spacing="100.0" styleClass="root-darker" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <JFXButton fx:id="cancelButton" graphicTextGap="8.0" onAction="#cancelButtonOnAction" prefHeight="35.0" prefWidth="160.0" text="Cancel" HBox.hgrow="NEVER">
+            <JFXButton fx:id="cancelButton" graphicTextGap="8.0" onAction="#cancelButtonOnAction" prefHeight="35.0" prefWidth="160.0" styleClass="my-button-purple" text="Cancel" textFill="#e8a3b4" HBox.hgrow="NEVER">
                <graphic>
                   <MaterialDesignIconView glyphName="BLOCK_HELPER" size="18" />
                </graphic>
@@ -64,7 +61,7 @@
                   <Font size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="saveButton" graphicTextGap="8.0" onAction="#saveButtonOnAction" prefHeight="35.0" prefWidth="160.0" text="Save" HBox.hgrow="NEVER">
+            <JFXButton fx:id="saveButton" graphicTextGap="8.0" onAction="#saveButtonOnAction" prefHeight="35.0" prefWidth="160.0" styleClass="my-button-green" text="Save" textFill="#f8a1c1" HBox.hgrow="NEVER">
                <graphic>
                   <MaterialDesignIconView glyphName="CHECKBOX_MARKED_CIRCLE_OUTLINE" size="20" />
                </graphic>
@@ -75,4 +72,10 @@
          </children>
       </HBox>
    </children>
+   <stylesheets>
+      <URL value="@styles/darkTheme.css" />
+      <URL value="@styles/labels.css" />
+      <URL value="@styles/buttons-dark.css" />
+      <URL value="@styles/tables.css" />
+   </stylesheets>
 </AnchorPane>

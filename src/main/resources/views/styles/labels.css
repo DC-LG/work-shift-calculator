@@ -8,6 +8,11 @@
     -fx-text-fill: WHITE;
 }
 
+.my-text-field:focused{
+    -fx-background-color: #8a5cb4;
+    -fx-border-radius: 2px WHITE;
+}
+
 .my-label-orange {
     -fx-background-color: #1D1D26;
     -fx-border-width:  0 0 2 0;
@@ -78,4 +83,9 @@
 
 .my-label-purple .glyph-icon {
     -fx-fill: #8a5cb4;
+}
+
+.my-combo-box:focused{
+    -fx-background-color: #8a5cb4;
+    -fx-border-radius: 2px white;
 }
